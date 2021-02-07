@@ -37,6 +37,84 @@ namespace Resident_Evil_2_RPC.Handler
             });
         }
 
+        public static void Running()
+        {
+            client.SetPresence(new RichPresence()
+            {
+                Details = $"Game started",
+                State = $"Idle",
+                Assets = new Assets()
+                {
+                    LargeImageKey = "mainimage",
+                    LargeImageText = "Resident Evil 2 Remake",
+                }
+            });
+        }
+
+        public static void StartNotRunning()
+        {
+            if (!client.IsInitialized)
+            {
+                client.Initialize();
+            }
+            client.SetPresence(new RichPresence()
+            {
+                Details = $"Game not running",
+                State = $"Idle",
+                Assets = new Assets()
+                {
+                    LargeImageKey = "mainimage",
+                    LargeImageText = "Resident Evil 2 Remake",
+                }
+            });
+        }
+
+        public static void NotRunning()
+        {
+            client.SetPresence(new RichPresence()
+            {
+                Details = $"Game not running",
+                State = $"Idle",
+                Assets = new Assets()
+                {
+                    LargeImageKey = "mainimage",
+                    LargeImageText = "Resident Evil 2 Remake",
+                }
+            });
+        }
+
+        public static void StartError()
+        {
+            if (!client.IsInitialized)
+            {
+                client.Initialize();
+            }
+            client.SetPresence(new RichPresence()
+            {
+                Details = $"RPC ran into an unknown error",
+                State = $"Idle",
+                Assets = new Assets()
+                {
+                    LargeImageKey = "mainimage",
+                    LargeImageText = "Resident Evil 2 Remake",
+                }
+            });
+        }
+
+        public static void Error()
+        {
+            client.SetPresence(new RichPresence()
+            {
+                Details = $"RPC ran into an unknown error",
+                State = $"Idle",
+                Assets = new Assets()
+                {
+                    LargeImageKey = "mainimage",
+                    LargeImageText = "Resident Evil 2 Remake",
+                }
+            });
+        }
+
         public static void ClaireStart()
         {
             if (!client.IsInitialized)
@@ -96,6 +174,20 @@ namespace Resident_Evil_2_RPC.Handler
                 Assets = new Assets()
                 {
                     LargeImageKey = "leon",
+                    LargeImageText = "Resident Evil 2 Remake",
+                }
+            });
+        }
+
+        public static void AFK()
+        {
+            client.SetPresence(new RichPresence()
+            {
+                Details = $"User AFK",
+                State = $"Idle",
+                Assets = new Assets()
+                {
+                    LargeImageKey = "mainimage",
                     LargeImageText = "Resident Evil 2 Remake",
                 }
             });
