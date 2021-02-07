@@ -62,6 +62,7 @@
       <DependentUpon>RPC.cs</DependentUpon>
     </Compile>
     <Compile Include="Handler\Discord.cs" />
+    <Compile Include="Handler\ResidentEvil.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\RPC.resx">
