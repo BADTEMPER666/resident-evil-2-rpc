@@ -27,6 +27,7 @@ namespace Resident_Evil_2_RPC
 
         private void leonBtn_Click(object sender, EventArgs e)
         {
+            characterLabel.Text = "Leon";
             if (discordstarted == false)
             {
                 claire = false;
@@ -45,6 +46,7 @@ namespace Resident_Evil_2_RPC
 
         private void claireBtn_Click(object sender, EventArgs e)
         {
+            characterLabel.Text = "Claire";
             if (discordstarted == false)
             {
                 claire = true;
